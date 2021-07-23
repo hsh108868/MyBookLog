@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
       slivers: <Widget>[
         SliverAppBar(
             expandedHeight: MediaQuery.of(context).size.height / 2,
-            flexibleSpace: Container(
+            flexibleSpace: DecoratedBox(
                 decoration: BoxDecoration(gradient: Gradients.hotLinear),
                 child: Row(
                   children: [
