@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
         body: CustomScrollView(
       slivers: <Widget>[
         SliverAppBar(
-            expandedHeight: MediaQuery.of(context).size.height / 2,
+            expandedHeight: MediaQuery.of(context).size.height / 3,
             flexibleSpace: DecoratedBox(
                 decoration: BoxDecoration(gradient: Gradients.hotLinear),
                 child: Row(
@@ -22,11 +22,16 @@ class _HomePageState extends State<HomePage> {
                     Icon(
                       Icons.menu,
                       color: Colors.white,
-                      size: MediaQuery.of(context).size.width / 15,
-                    )
+                      size: MediaQuery.of(context).size.width / 20,
+                    ),
+                    Icon(
+                      Icons.search,
+                      color: Colors.white,
+                      size: MediaQuery.of(context).size.width / 20,
+                    ),
                   ],
                 )),
-            stretch: true)
+            stretch: true),
       ],
     ));
   }
