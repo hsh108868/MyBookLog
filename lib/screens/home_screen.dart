@@ -22,13 +22,15 @@ class _HomePageState extends State<HomePage> {
                     Icon(
                       Icons.menu,
                       color: Colors.white,
-                      size: MediaQuery.of(context).size.width / 20,
+                      size: MediaQuery.of(context).size.width / 25,
                     ),
-                    Icon(
-                      Icons.search,
-                      color: Colors.white,
-                      size: MediaQuery.of(context).size.width / 20,
-                    ),
+                    IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.search,
+                          color: Colors.white,
+                          size: MediaQuery.of(context).size.width / 25,
+                        )),
                   ],
                 )),
             stretch: true),
