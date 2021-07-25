@@ -18,18 +18,19 @@ class _HomePageState extends State<HomePage> {
             flexibleSpace: DecoratedBox(
                 decoration: BoxDecoration(gradient: Gradients.hotLinear),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(
-                      Icons.menu,
-                      color: Colors.white,
-                      size: MediaQuery.of(context).size.width / 25,
-                    ),
+                    IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.menu,
+                          color: Colors.white,
+                        )),
                     IconButton(
                         onPressed: () {},
                         icon: Icon(
                           Icons.search,
                           color: Colors.white,
-                          size: MediaQuery.of(context).size.width / 25,
                         )),
                   ],
                 )),
