@@ -25,26 +25,26 @@ class _HomePageState extends State<HomePage> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            expandedHeight: MediaQuery.of(context).size.height / 3,
-            flexibleSpace: DecoratedBox(
-                decoration: BoxDecoration(gradient: Gradients.hotLinear),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.menu,
-                          color: Colors.white,
-                        )),
-                    IconButton(
-                        onPressed: () {},
-                        icon: Icon(
-                          Icons.search,
-                          color: Colors.white,
-                        )),
-                  ],
+            leading: IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.menu,
+                  color: Colors.white,
                 )),
+            actions: [
+              IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.search,
+                    color: Colors.white,
+                  )),
+            ],
+            expandedHeight: MediaQuery.of(context).size.height / 2,
+            flexibleSpace: FlexibleSpaceBar(
+              background: DecoratedBox(
+                decoration: BoxDecoration(gradient: Gradients.hotLinear),
+              ),
+            ),
             stretch: true),
       ],
     ));
