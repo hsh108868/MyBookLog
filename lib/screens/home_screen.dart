@@ -15,7 +15,8 @@ class _HomePageState extends State<HomePage> {
         body: CustomScrollView(
       slivers: <Widget>[
         SliverAppBar(
-            centerTitle: true,
+            floating: false,
+            pinned: true,
             title: Text(
               'Home',
               style: GoogleFonts.notoSans(
@@ -46,6 +47,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             stretch: true),
+        SliverFillRemaining()
       ],
     ));
   }
