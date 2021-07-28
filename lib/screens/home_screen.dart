@@ -47,7 +47,9 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             stretch: true),
-        SliverFillRemaining()
+        SliverFillRemaining(
+          child: Row(children: []),
+        )
       ],
     ));
   }
