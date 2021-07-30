@@ -17,15 +17,6 @@ class _HomePageState extends State<HomePage> {
         SliverAppBar(
             floating: false,
             pinned: true,
-            title: Text(
-              'Home',
-              style: GoogleFonts.notoSans(
-                textStyle: TextStyle(
-                    color: Colors.white,
-                    fontSize: MediaQuery.of(context).size.height / 18,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
             leading: IconButton(
                 onPressed: () {},
                 icon: Icon(
@@ -42,6 +33,15 @@ class _HomePageState extends State<HomePage> {
             ],
             expandedHeight: MediaQuery.of(context).size.height / 2,
             flexibleSpace: FlexibleSpaceBar(
+              title: Text(
+                'Home',
+                style: GoogleFonts.notoSans(
+                  textStyle: TextStyle(
+                      color: Colors.white,
+                      fontSize: MediaQuery.of(context).size.height / 18,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
               background: DecoratedBox(
                 decoration: BoxDecoration(gradient: Gradients.hotLinear),
               ),
