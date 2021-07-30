@@ -15,6 +15,7 @@ class _HomePageState extends State<HomePage> {
         body: CustomScrollView(
       slivers: <Widget>[
         SliverAppBar(
+            expandedHeight: MediaQuery.of(context).size.height / 2,
             floating: false,
             pinned: true,
             leading: IconButton(
@@ -31,7 +32,6 @@ class _HomePageState extends State<HomePage> {
                     color: Colors.white,
                   )),
             ],
-            expandedHeight: MediaQuery.of(context).size.height / 2,
             flexibleSpace: FlexibleSpaceBar(
               title: Text(
                 'Home',
