@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
             stretch: true),
         SliverFillRemaining(
           child: ListView(
-            children: [Text('hello'), Text('hello, world')],
+            children: [],
             reverse: true,
           ),
         ),
