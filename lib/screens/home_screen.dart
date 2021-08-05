@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {},
                 icon: Icon(
                   Icons.menu,
-                  color: Colors.white10,
+                  color: Colors.white,
                 )),
             actions: [
               IconButton(
