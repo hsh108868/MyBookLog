@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
                   onPressed: () {},
                   icon: Icon(
                     Icons.search,
-                    color: Colors.white,
+                    color: Colors.white10,
                   )),
             ],
             flexibleSpace: FlexibleSpaceBar(
